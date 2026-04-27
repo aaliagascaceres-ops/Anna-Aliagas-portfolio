@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anna Aliagas® — Dissenyadora multidisciplinar</title>
+  <meta name="description" content="Portfolio d'Anna Aliagas. Dissenyadora multidisciplinar entre l'objecte, la imatge i l'espai. Salou & Barcelona." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=6" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <a href="#top" class="brand">
+      <span class="brand-dot"></span>
+      <strong>Anna Aliagas®</strong>
+      <span class="brand-sep">—</span>
+      <span class="brand-role" data-i18n="brand.role">Dissenyadora multidisciplinar</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#sobre-mi" data-i18n="nav.about">Sobre mi</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacte</a>
+      <div class="lang-switcher" role="group" aria-label="Idioma">
+        <button type="button" data-lang="ca" class="active">CAT</button>
+        <span class="lang-sep">·</span>
+        <button type="button" data-lang="es">ES</button>
+        <span class="lang-sep">·</span>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <span class="time" id="time">--:-- BCN</span>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="top">
+    <div class="hero-meta">
+      <div class="hero-meta-track">
+        <div class="meta-cell">
+          <span class="meta-label">A — 00</span>
+          <span class="meta-value">Portfolio / 2025–26</span>
+        </div>
+        <div class="meta-cell">
+          <span class="meta-label" data-i18n="hero.label.role">B — ROL</span>
+          <span class="meta-value" data-i18n="brand.role">Dissenyadora multidisciplinar</span>
+        </div>
+        <div class="meta-cell">
+          <span class="meta-label" data-i18n="hero.label.base">C — BASE</span>
+          <span class="meta-value">Salou &amp; Barcelona</span>
+        </div>
+        <div class="meta-cell">
+          <span class="meta-label" data-i18n="hero.label.available">D — DISPONIBLE</span>
+          <span class="meta-value" data-i18n="hero.available">Pràctiques &amp; col·laboracions</span>
+        </div>
+        <div class="meta-cell meta-cell-clone" aria-hidden="true">
+          <span class="meta-label">A — 00</span>
+          <span class="meta-value">Portfolio / 2025–26</span>
+        </div>
+        <div class="meta-cell meta-cell-clone" aria-hidden="true">
+          <span class="meta-label" data-i18n="hero.label.role">B — ROL</span>
+          <span class="meta-value" data-i18n="brand.role">Dissenyadora multidisciplinar</span>
+        </div>
+        <div class="meta-cell meta-cell-clone" aria-hidden="true">
+          <span class="meta-label" data-i18n="hero.label.base">C — BASE</span>
+          <span class="meta-value">Salou &amp; Barcelona</span>
+        </div>
+        <div class="meta-cell meta-cell-clone" aria-hidden="true">
+          <span class="meta-label" data-i18n="hero.label.available">D — DISPONIBLE</span>
+          <span class="meta-value" data-i18n="hero.available">Pràctiques &amp; col·laboracions</span>
+        </div>
+      </div>
+    </div>
+    <hr class="rule" />
+
+    <h1 class="hero-title">
+      <img src="images/logo.png" alt="Anna Aliagas" class="hero-logo" />
+    </h1>
+
+    <hr class="rule" />
+    <div class="hero-foot">
+      <span class="section-num" data-i18n="hero.section">§ INTRODUCCIÓ</span>
+      <p class="hero-tag" data-i18n-html="hero.tag">
+        Pràctica de disseny entre l'objecte, la imatge i
+        <em class="hl-rose">l'espai</em> — amb una mirada oberta al quotidià.
+      </p>
+      <a href="#trabajo" class="link-arrow" data-i18n-html="hero.cta">Veure treball <span class="arrow">↘</span></a>
+    </div>
+  </section>
+
+  <!-- ========== SELECTED WORK ========== -->
+  <section id="trabajo" class="work">
+    <header class="work-header">
+      <h2 class="work-title">
+        <span data-i18n="work.title">Selected Work</span> <em class="serif-italic" data-i18n="work.subtitle">/Projectes seleccionats</em>
+        <span class="count">(<span id="projectCount">08</span>)</span>
+      </h2>
+    </header>
+    <hr class="rule" />
+
+    <nav class="filters" aria-label="Filtres de categoria">
+      <button class="filter active" data-filter="todo"><span data-i18n="filter.all">Tot</span> <sup id="cTodo">08</sup></button>
+      <button class="filter" data-filter="industrial"><span data-i18n="filter.industrial">Industrial</span> <sup id="cIndustrial">02</sup></button>
+      <button class="filter" data-filter="grafico"><span data-i18n="filter.grafico">Gràfic</span> <sup id="cGrafico">04</sup></button>
+      <button class="filter" data-filter="efimero"><span data-i18n="filter.efimero">Efímer</span> <sup id="cEfimero">02</sup></button>
+    </nav>
+
+    <div class="projects-grid" id="projectsGrid"></div>
+  </section>
+
+  <!-- ========== SOBRE MÍ ========== -->
+  <section id="sobre-mi" class="about">
+    <header class="about-header">
+      <h2 data-i18n="about.title">Sobre mi</h2>
+      <span class="section-num">§ 02</span>
+    </header>
+    <hr class="rule" />
+
+    <div class="about-intro">
+      <span class="meta-label" data-i18n="label.intro">INTRODUCCIÓ</span>
+      <h3 class="about-claim" data-i18n-html="about.claim">
+        Soc Anna Aliagas, <em class="serif-italic rose">estudiant.</em>
+      </h3>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p data-i18n="about.p1">
+          Els meus projectes solen moure's entre l'objecte, la imatge i l'espai,
+          explorant com el disseny pot transformar la percepció i generar nous
+          significats. M'interessa especialment la relació entre el disseny
+          industrial i el gràfic, on la funcionalitat i la narrativa es troben.
+        </p>
+        <p data-i18n="about.p2">
+          Treballo des d'una mirada oberta i exploratòria. M'agrada donar la
+          volta al quotidià, reinterpretant elements coneguts per convertir-los
+          en alguna cosa nova. No segueixo un estil tancat: adapto l'enfocament
+          a cada projecte, deixant que l'experimentació i el procés defineixin
+          el resultat.
+        </p>
+      </div>
+      <dl class="about-meta">
+        <div class="meta-row">
+          <dt data-i18n="label.base">BASE</dt>
+          <dd>Salou &amp; Barcelona</dd>
+        </div>
+        <div class="meta-row">
+          <dt data-i18n="label.formacion">FORMACIÓ</dt>
+          <dd>Universitat de Barcelona</dd>
+        </div>
+        <div class="meta-row">
+          <dt data-i18n="label.idiomas">IDIOMES</dt>
+          <dd data-i18n="about.languages">Castellà, Català, Anglès</dd>
+        </div>
+        <div class="meta-row">
+          <dt data-i18n="label.disponible">DISPONIBLE</dt>
+          <dd data-i18n="about.available">Pràctiques · Col·laboracions</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="about-lists">
+      <div class="list-block">
+        <span class="meta-label" data-i18n="label.intereses">INTERESSOS</span>
+        <ol class="num-list">
+          <li><span class="num">01</span><span data-i18n="interest.1">La il·lustració com a eina narrativa</span></li>
+          <li><span class="num">02</span><span data-i18n="interest.2">Objectes industrials i exploració material</span></li>
+          <li><span class="num">03</span><span data-i18n="interest.3">Identitat visual i branding</span></li>
+          <li><span class="num">04</span><span data-i18n="interest.4">Disseny espacial i efímer</span></li>
+          <li><span class="num">05</span><span data-i18n="interest.5">Reinterpretació del quotidià</span></li>
+        </ol>
+      </div>
+      <div class="list-block">
+        <span class="meta-label" data-i18n="label.enfoque">ENFOCAMENT</span>
+        <ul class="dash-list">
+          <li><em data-i18n="approach.1">Reinterpretar el familiar per generar noves lectures.</em></li>
+          <li><em data-i18n="approach.2">Procés creatiu obert, no restrictiu.</em></li>
+          <li><em data-i18n="approach.3">Equilibri entre concepte i funció.</em></li>
+          <li><em data-i18n="approach.4">Experimentar fent — maquetes, proves, iteració.</em></li>
+          <li><em data-i18n="approach.5">Pensament interdisciplinari.</em></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CAPACIDADES ========== -->
+  <section class="capabilities">
+    <hr class="rule" />
+    <div class="cap-grid">
+      <div class="cap-intro">
+        <span class="meta-label" data-i18n="label.capacidades">CAPACITATS</span>
+        <h3 data-i18n="caps.title">Eines, mètodes i disciplines amb què treballo.</h3>
+      </div>
+      <div class="cap-col">
+        <span class="meta-label" data-i18n="label.herramientas">EINES</span>
+        <ul class="cap-list">
+          <li>Figma</li>
+          <li>AutoCAD</li>
+          <li>Fusion 360</li>
+          <li>Illustrator</li>
+          <li>InDesign</li>
+          <li>Photoshop</li>
+          <li>Procreate</li>
+          <li>Canva</li>
+        </ul>
+      </div>
+      <div class="cap-col">
+        <span class="meta-label" data-i18n="label.metodos">MÈTODES</span>
+        <ul class="cap-list">
+          <li data-i18n="method.1">Maquetes</li>
+          <li data-i18n="method.2">Prototipat</li>
+          <li data-i18n="method.3">Desenvolupament conceptual</li>
+          <li data-i18n="method.4">Narrativa visual</li>
+          <li data-i18n="method.5">Direcció gràfica</li>
+          <li data-i18n="method.6">Identitat</li>
+        </ul>
+      </div>
+      <div class="cap-col">
+        <span class="meta-label" data-i18n="label.disciplinas">DISCIPLINES</span>
+        <ul class="cap-list">
+          <li data-i18n="discipline.1">Disseny industrial</li>
+          <li data-i18n="discipline.2">Disseny gràfic</li>
+          <li data-i18n="discipline.3">Packaging</li>
+          <li data-i18n="discipline.4">Instal·lació efímera</li>
+          <li>UI / Digital</li>
+          <li data-i18n="discipline.6">Il·lustració</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section id="contacto" class="contact">
+    <hr class="rule" />
+    <div class="contact-inner">
+      <span class="section-num">§ 03</span>
+      <h2 class="contact-title" data-i18n-html="contact.title">Contacte<span class="dot-accent">.</span></h2>
+      <p class="contact-lead" data-i18n-html="contact.lead">
+        Estic oberta a pràctiques, col·laboracions i petits encàrrecs.<br />
+        Escriu-me i t'explico com treballo.
+      </p>
+      <div class="contact-buttons">
+        <a href="mailto:aaliagascaceres@gmail.com" class="btn btn-primary">
+          <span data-i18n="contact.cta">Escriu-me</span> <span class="arrow">↗</span>
+        </a>
+        <button class="btn btn-secondary copy-btn" data-copy="aaliagascaceres@gmail.com" type="button">
+          <span class="ic">⎘</span> aaliagascaceres@gmail.com
+        </button>
+        <a href="tel:+34640887501" class="btn btn-secondary">
+          <span class="ic">☏</span> +34 640 887 501
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <hr class="rule" />
+    <div class="footer-row">
+      <span class="footer-copy" data-i18n="footer.copy">© 2026 — Anna Aliagas. Tots els drets reservats.</span>
+      <div class="footer-loc">
+        <span>Salou &amp; Barcelona</span>
+        <span>Instagram · @nnaac_design</span>
+      </div>
+      <nav class="footer-social">
+        <a href="https://instagram.com/nnaac_design" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.linkedin.com/in/anna-aliagas-caceres-1683ba3b8/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:aaliagascaceres@gmail.com">Email</a>
+      </nav>
+    </div>
+    <div class="footer-name" aria-hidden="true">
+      <span>Anna</span> <span class="rose">Aliagas<span class="dot-accent">.</span></span>
+    </div>
+  </footer>
+
+  <!-- ========== PROJECT MODAL ========== -->
+  <div class="modal" id="projectModal" hidden aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-content">
+      <button class="modal-close" data-close aria-label="Tancar">×</button>
+
+      <div class="modal-gallery">
+        <button class="gal-nav prev" aria-label="Imatge anterior">‹</button>
+        <button class="gal-nav next" aria-label="Imatge següent">›</button>
+        <div class="gal-main" id="galMain"></div>
+        <div class="gal-foot">
+          <div class="gal-thumbs" id="galThumbs"></div>
+          <div class="gal-counter"><span id="galCurrent">01</span> / <span id="galTotal">05</span></div>
+        </div>
+      </div>
+
+      <aside class="modal-info">
+        <div class="modal-info-head">
+          <span class="meta-label" id="modalCatLabel">01 — DISSENY INDUSTRIAL</span>
+          <h3 id="modalTitle">LINA</h3>
+          <div class="modal-award" id="modalAward" hidden>
+            <span class="award-pill"><span class="star">★</span> <span id="modalAwardText">PREMI</span></span>
+          </div>
+        </div>
+        <hr class="rule" />
+        <dl class="modal-meta">
+          <div class="meta-row">
+            <dt data-i18n="modal.year">ANY</dt><dd id="modalYear">—</dd>
+          </div>
+          <div class="meta-row">
+            <dt data-i18n="modal.client">CLIENT</dt><dd id="modalClient">—</dd>
+          </div>
+          <div class="meta-row">
+            <dt data-i18n="modal.type">TIPOLOGIA</dt><dd id="modalType">—</dd>
+          </div>
+        </dl>
+        <hr class="rule" />
+        <div id="modalDesc" class="modal-desc"></div>
+        <div class="modal-block">
+          <span class="meta-label" data-i18n="modal.process">PROCÉS</span>
+          <div id="modalProcess" class="modal-process"></div>
+        </div>
+        <div class="modal-block">
+          <span class="meta-label" data-i18n="modal.tools">EINES</span>
+          <div class="tag-list" id="modalTools"></div>
+        </div>
+        <div class="modal-block" id="modalExtraBlock" hidden>
+          <span class="meta-label" data-i18n="modal.more">VEURE MÉS</span>
+          <a id="modalExtraLink" class="modal-extra-link" target="_blank" rel="noopener">
+            <span id="modalExtraLabel"></span> <span class="arrow">↗</span>
+          </a>
+        </div>
+      </aside>
+    </article>
+  </div>
+
+  <script src="script.js?v=5"></script>
+</body>
+</html>
